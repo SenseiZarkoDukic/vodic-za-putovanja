@@ -657,7 +657,7 @@ const App = () => {
                             <h5 className="text-lg font-semibold text-blue-700 mb-2">Reka Aheron: Mitske vode i avanture</h5>
                             <div className="relative w-full max-w-xl mx-auto mb-4 rounded-xl overflow-hidden shadow-md">
                                 <OptimizedImage
-                                    src="https://www.greeka.com/photos/epirus/preveza/hero/aheron-river-1280.jpg"
+                                    src="https://lucina-potepanja.com/wp-content/uploads/2019/07/acheron-river-2-1140x660.jpg"
                                     alt="Reka Aheron"
                                     className="w-full h-auto object-cover"
                                     caption="Približno 30-45 minuta vožnje od Perdike do Glikija"
