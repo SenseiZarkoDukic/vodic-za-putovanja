@@ -354,7 +354,7 @@ const App = () => {
                                 <span className="font-bold mr-2">Agia Paraskevi:</span>
                                 <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
                                     <OptimizedImage
-                                        src="https://www.greeka.com/photos/ionian/corfu/beaches/agia-paraskevi/hero/agia-paraskevi-beach-1280.jpg"
+                                        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/145929450.jpg?k=b5b2bac9d22d0570cc14294ac2b9b0f9a955fa408fa835b9e64ba269cbe771a6&o=&hp=1"
                                         alt="Agia Paraskevi plaža"
                                         className="w-full h-full object-cover"
                                         caption="Prelepa Agia Paraskevi plaža u Perdiki"
