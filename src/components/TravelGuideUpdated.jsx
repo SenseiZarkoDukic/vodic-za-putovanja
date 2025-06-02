@@ -420,6 +420,7 @@ const App = () => {
                                         src="https://www.ponte.rs/UPLOADS-PONTE/2023/02/KRF-OSTRVO.jpg"
                                         alt="Korfu grad"
                                         className="w-full h-full object-cover"
+                                        caption="Korfu grad"
                                     />
                                 </div>
                                 Istorijski grad sa utvrđenjima i prelepim plažama.
@@ -431,6 +432,7 @@ const App = () => {
                                         src="https://maestral.co.rs/wp-content/uploads/2023/11/Ostrvo-Zakintos-Grcka-2.jpg"
                                         alt="Zakintos plaža"
                                         className="w-full h-full object-cover"
+                                        caption="Zakintos plaža"
                                     />
                                 </div>
                                 Poznat po svojim plavim pećinama i prelepim plažama.
@@ -442,6 +444,7 @@ const App = () => {
                                         src="https://www.mediteraneo.rs/pic/Kefalonija-01.jpg"
                                         alt="Kefalonija pejzaž"
                                         className="w-full h-full object-cover"
+                                        caption="Kefalonija pejzaž"
                                     />
                                 </div>
                                 Najveće Jonsko ostrvo sa prelepim pejzažima.
@@ -453,6 +456,7 @@ const App = () => {
                                         src="https://grckikutak.com/wp-content/uploads/2020/06/itaka.png"
                                         alt="Itaka zaliv"
                                         className="w-full h-full object-cover"
+                                        caption="Itaka zaliv"
                                     />
                                 </div>
                                 Dom legendarnog Odiseja sa prelepim zalivima.
@@ -470,6 +474,7 @@ const App = () => {
                                         src="https://d2p1cf6997m1ir.cloudfront.net/media/thumbnails/1d/09/1d09f7541afd9d6fbc7b50775b87288b.webp"
                                         alt="Ronjenje u Jonskom moru"
                                         className="w-full h-full object-cover"
+                                        caption="Ronjenje u Jonskom moru"
                                     />
                                 </div>
                                 Istražite podvodni svet Jonskog mora.
@@ -481,6 +486,7 @@ const App = () => {
                                         src="https://dynamic-media.tacdn.com/media/photo-o/2e/e7/3c/1f/caption.jpg?w=800&h=600&s=1"
                                         alt="Vožnja čamcem"
                                         className="w-full h-full object-cover"
+                                        caption="Vožnja čamcem"
                                     />
                                 </div>
                                 Posetite skrivene plaže i zalive.
@@ -492,6 +498,7 @@ const App = () => {
                                         src="https://images.squarespace-cdn.com/content/v1/5e484ab628c78d6f7e602d73/c185f22e-bfed-4486-bb0b-749b8491a69d/traditional-greek-dishes.jpg"
                                         alt="Grčka kuhinja"
                                         className="w-full h-full object-cover"
+                                        caption="Grčka kuhinja"
                                     />
                                 </div>
                                 Probajte autentične grčke specijalitete.
@@ -553,6 +560,7 @@ const App = () => {
                                         src="https://media-cdn.tripadvisor.com/media/photo-s/1a/2c/9c/6c/nontas-fish-restaurant.jpg"
                                         alt="Nontas Fish Restaurant"
                                         className="w-full h-full object-cover"
+                                        caption="Nontas Fish Restaurant"
                                     />
                                 </div>
                                 <p className="text-gray-700">
@@ -567,6 +575,7 @@ const App = () => {
                                         src="https://media-cdn.tripadvisor.com/media/photo-s/1a/2c/9c/6d/the-crabs-tavern.jpg"
                                         alt="The Crabs Tavern"
                                         className="w-full h-full object-cover"
+                                        caption="The Crabs Tavern"
                                     />
                                 </div>
                                 <p className="text-gray-700">
@@ -762,6 +771,7 @@ const App = () => {
                                         src="https://europeanwesternbalkans.com/wp-content/uploads/2024/03/342301934_253874793759224_803575013896565759_n-960x540-1.jpeg"
                                         alt="Putnički dokumenti"
                                         className="w-full h-full object-cover"
+                                        caption="Putnički dokumenti"
                                     />
                                 </div>
                                 Proverite sve potrebne dokumente pre polaska.
@@ -773,6 +783,7 @@ const App = () => {
                                         src="https://www.lareserve-ramatuelle.com/wp-content/uploads/2020/11/lrr_accomodation_junior-suite_bygregoiregardette_6463_bd.jpg"
                                         alt="Smeštaj"
                                         className="w-full h-full object-cover"
+                                        caption="Smeštaj"
                                     />
                                 </div>
                                 Rezervišite smeštaj unapred za sve destinacije.
@@ -784,6 +795,7 @@ const App = () => {
                                         src="https://images.squarespace-cdn.com/content/v1/62b42acaae8de47236dbc8f2/abc61c8d-96b4-49c1-b492-7652236f7dc3/pexels-daniel-jurin-1835718.jpg"
                                         alt="Vremenske prilike"
                                         className="w-full h-full object-cover"
+                                        caption="Vremenske prilike"
                                     />
                                 </div>
                                 Proverite vremenske prilike za svaku destinaciju.
