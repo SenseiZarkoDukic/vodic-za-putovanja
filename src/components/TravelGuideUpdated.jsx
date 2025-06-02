@@ -369,6 +369,7 @@ const App = () => {
                                         src="https://weloveaegina.com/wp-content/uploads/2021/06/antonis-perdika-front-03-1704x800.jpeg"
                                         alt="Lokalna taverna"
                                         className="w-full h-full object-cover"
+                                        caption="Lokalna taverna u Perdiki"
                                     />
                                 </div>
                                 Probajte autentičnu grčku kuhinju u lokalnim tavernama.
@@ -380,6 +381,7 @@ const App = () => {
                                         src="https://c8.alamy.com/comp/2KKHADD/the-small-port-of-perdika-in-aegina-greece-a-common-stop-over-port-on-sailing-holidays-in-the-saronic-gulf-2KKHADD.jpg"
                                         alt="Mali pristan u Perdiki"
                                         className="w-full h-full object-cover"
+                                        caption="Mali pristan u Perdiki"
                                     />
                                 </div>
                                 Slikovit pristan sa tradicionalnim ribarskim čamcima.
