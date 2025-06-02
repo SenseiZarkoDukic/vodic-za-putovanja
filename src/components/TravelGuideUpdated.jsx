@@ -625,7 +625,7 @@ const App = () => {
                             <h5 className="text-lg font-semibold text-blue-700 mb-2">Sivota: "Karibi Grčke"</h5>
                             <div className="relative w-full max-w-xl mx-auto mb-4 rounded-xl overflow-hidden shadow-md">
                                 <OptimizedImage
-                                    src="https://www.greeka.com/photos/epirus/sivota/hero/sivota-1280.jpg"
+                                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/56/5e/47/caption.jpg?w=500&h=400&s=1"
                                     alt="Sivota"
                                     className="w-full h-auto object-cover"
                                     caption="Približno 15-20 minuta vožnje od Perdike"
