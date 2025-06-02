@@ -327,15 +327,40 @@ const App = () => {
                         <h5 className="text-lg font-semibold text-gray-700 mb-2">Obavezno posetiti u Perdiki:</h5>
                         <ul className="list-disc list-inside space-y-2 text-gray-700">
                             <li className="flex items-center">
-                                <span className="font-bold mr-2">Glavna plaža:</span>
+                                <span className="font-bold mr-2">Karavostasi:</span>
                                 <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
                                     <OptimizedImage
                                         src="https://www.perdika.info/images/_Karavostasi_Beach_Hotel/_large/_0000364%20copy.jpg"
-                                        alt="Glavna plaža u Perdiki"
+                                        alt="Karavostasi plaža"
                                         className="w-full h-full object-cover"
+                                        caption="Prelepa Karavostasi plaža u Perdiki"
                                     />
                                 </div>
                                 Prelepa plaža sa kristalno čistom vodom i peščanim dnom.
+                            </li>
+                            <li className="flex items-center">
+                                <span className="font-bold mr-2">Arilas:</span>
+                                <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
+                                    <OptimizedImage
+                                        src="https://www.greeka.com/photos/ionian/corfu/beaches/arilas/hero/arilas-beach-1280.jpg"
+                                        alt="Arilas plaža"
+                                        className="w-full h-full object-cover"
+                                        caption="Prelepa Arilas plaža u Perdiki"
+                                    />
+                                </div>
+                                Prelepa plaža sa finim, lepljivim peskom.
+                            </li>
+                            <li className="flex items-center">
+                                <span className="font-bold mr-2">Agia Paraskevi:</span>
+                                <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
+                                    <OptimizedImage
+                                        src="https://www.greeka.com/photos/ionian/corfu/beaches/agia-paraskevi/hero/agia-paraskevi-beach-1280.jpg"
+                                        alt="Agia Paraskevi plaža"
+                                        className="w-full h-full object-cover"
+                                        caption="Prelepa Agia Paraskevi plaža u Perdiki"
+                                    />
+                                </div>
+                                Prelepa plaža sa finim pesakom i oblutci.
                             </li>
                             <li className="flex items-center">
                                 <span className="font-bold mr-2">Lokalne taverne:</span>
@@ -470,6 +495,210 @@ const App = () => {
                                 Probajte autentične grčke specijalitete.
                             </li>
                         </ul>
+                    </div>
+
+                    <div className="mb-8">
+                        <h4 className="text-xl font-medium text-gray-700 mb-2">Plaže u Perdiki</h4>
+                        <div className="overflow-x-auto">
+                            <table className="min-w-full bg-white border border-gray-200 rounded-lg">
+                                <thead className="bg-gray-50">
+                                    <tr>
+                                        <th className="py-3 px-6 text-left">Naziv plaže</th>
+                                        <th className="py-3 px-6 text-left">Sastav obale</th>
+                                        <th className="py-3 px-6 text-left">Dubina vode</th>
+                                        <th className="py-3 px-6 text-left">Organizacija</th>
+                                        <th className="py-3 px-6 text-left">Dostupni sadržaji</th>
+                                        <th className="py-3 px-6 text-left">Prikladnost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-6">Karavostasi</td>
+                                        <td className="py-3 px-6">Fini pesak i oblutci</td>
+                                        <td className="py-3 px-6">Duboka</td>
+                                        <td className="py-3 px-6">Organizovana</td>
+                                        <td className="py-3 px-6">Ležaljke, suncobrani, kafići, taverne, spasilac</td>
+                                        <td className="py-3 px-6">Opšte opuštanje</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-6">Arilas</td>
+                                        <td className="py-3 px-6">Fini, lepljivi pesak</td>
+                                        <td className="py-3 px-6">Plitka</td>
+                                        <td className="py-3 px-6">Organizovana</td>
+                                        <td className="py-3 px-6">Ležaljke, suncobrani, vodeni bicikli, tuševi, taverne</td>
+                                        <td className="py-3 px-6">Porodice sa decom</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-6">Agia Paraskevi</td>
+                                        <td className="py-3 px-6">Fini pesak i oblutci</td>
+                                        <td className="py-3 px-6">Tirkizna, čista</td>
+                                        <td className="py-3 px-6">Organizovana</td>
+                                        <td className="py-3 px-6">Ležaljke, suncobrani, vodeni bicikli, kanui, spasilac</td>
+                                        <td className="py-3 px-6">Slikovito, opuštanje</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div className="mb-8">
+                        <h4 className="text-xl font-medium text-gray-700 mb-2">Preporučeni restorani u Perdiki</h4>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="bg-white p-6 rounded-xl shadow-md">
+                                <h5 className="text-lg font-semibold text-blue-700 mb-2">Nontas Fish Restaurant</h5>
+                                <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                                    <OptimizedImage
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/1a/2c/9c/6c/nontas-fish-restaurant.jpg"
+                                        alt="Nontas Fish Restaurant"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <p className="text-gray-700">
+                                    Renomirana, porodična tradicionalna taverna koja posluje od 1936. godine.
+                                    Specijalizovana za svežu morsku hranu i ribu koju love lokalni ribari.
+                                </p>
+                            </div>
+                            <div className="bg-white p-6 rounded-xl shadow-md">
+                                <h5 className="text-lg font-semibold text-blue-700 mb-2">The Crabs Tavern</h5>
+                                <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                                    <OptimizedImage
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/1a/2c/9c/6d/the-crabs-tavern.jpg"
+                                        alt="The Crabs Tavern"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <p className="text-gray-700">
+                                    Visoko preporučena zbog izuzetne kvaliteta hrane, sa svežom morskom hranom
+                                    i dnevnim promenljivim jelovnikom sa jedinstvenim specijalitetima.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mb-8">
+                        <h4 className="text-xl font-medium text-gray-700 mb-2">Jednodnevni izleti iz Perdike</h4>
+
+                        {/* Parga Section */ }
+                        <div className="mb-6">
+                            <h5 className="text-lg font-semibold text-blue-700 mb-2">Parga: Slikoviti grad i zapanjujuće uvale</h5>
+                            <div className="relative w-full max-w-xl mx-auto mb-4 rounded-xl overflow-hidden shadow-md">
+                                <OptimizedImage
+                                    src="https://www.greeka.com/photos/epirus/parga/hero/parga-1280.jpg"
+                                    alt="Parga"
+                                    className="w-full h-auto object-cover"
+                                    caption="Približno 30-40 minuta vožnje od Perdike"
+                                />
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h6 className="font-semibold mb-2">Znamenitosti:</h6>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>Venecijanski dvorac (9-19h, besplatno)</li>
+                                        <li>Plaža Valtos (2 km od centra)</li>
+                                        <li>Plaža Lihnos</li>
+                                        <li>Plaža Sarakiniko</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h6 className="font-semibold mb-2">Restorani:</h6>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>The Captain's Restaurant</li>
+                                        <li>Fish Taverna Suli</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Sivota Section */ }
+                        <div className="mb-6">
+                            <h5 className="text-lg font-semibold text-blue-700 mb-2">Sivota: "Karibi Grčke"</h5>
+                            <div className="relative w-full max-w-xl mx-auto mb-4 rounded-xl overflow-hidden shadow-md">
+                                <OptimizedImage
+                                    src="https://www.greeka.com/photos/epirus/sivota/hero/sivota-1280.jpg"
+                                    alt="Sivota"
+                                    className="w-full h-auto object-cover"
+                                    caption="Približno 15-20 minuta vožnje od Perdike"
+                                />
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h6 className="font-semibold mb-2">Plaže:</h6>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>Bela Vraka plaža</li>
+                                        <li>Pisina plaža (Plava laguna)</li>
+                                        <li>Mega Amos plaža</li>
+                                        <li>Mikri Amos plaža</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h6 className="font-semibold mb-2">Restorani:</h6>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>Ionion Fish Restaurant</li>
+                                        <li>Oliva Beach Bar-Seafood Restaurant</li>
+                                        <li>Taverna Stavros</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Aheron River Section */ }
+                        <div className="mb-6">
+                            <h5 className="text-lg font-semibold text-blue-700 mb-2">Reka Aheron: Mitske vode i avanture</h5>
+                            <div className="relative w-full max-w-xl mx-auto mb-4 rounded-xl overflow-hidden shadow-md">
+                                <OptimizedImage
+                                    src="https://www.greeka.com/photos/epirus/preveza/hero/aheron-river-1280.jpg"
+                                    alt="Reka Aheron"
+                                    className="w-full h-auto object-cover"
+                                    caption="Približno 30-45 minuta vožnje od Perdike do Glikija"
+                                />
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h6 className="font-semibold mb-2">Aktivnosti:</h6>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>Rafting</li>
+                                        <li>Kajak</li>
+                                        <li>Jahanje kroz plitke vode</li>
+                                        <li>Rekarski trekking</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h6 className="font-semibold mb-2">Znamenitosti:</h6>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>Nekromanteion Aherona (ulaznica ~6€)</li>
+                                        <li>Izvori Aherona u Glikiju</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Cultural Experiences Section */ }
+                    <div className="mb-8">
+                        <h4 className="text-xl font-medium text-gray-700 mb-2">Imersivna kulturna iskustva u Epiru</h4>
+                        <div className="bg-white p-6 rounded-xl shadow-md">
+                            <p className="text-gray-700 mb-4">
+                                Epir se može pohvaliti izrazitom i drevnom muzičkom tradicijom, koju karakteriše
+                                njen dirljiv, često melankoličan zvuk. Ključni instrumenti uključuju klarinet,
+                                violinu, lutnju i tamburicu.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h6 className="font-semibold mb-2">Festivali:</h6>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>Festival Epirus Music Village (Pogoniji, avgust)</li>
+                                        <li>Kanaria Festival (Parga, 14. avgusta)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h6 className="font-semibold mb-2">Lokalne taverne sa muzikom:</h6>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>Tavern Grill Ksaderfos (blizu Perdike)</li>
+                                        <li>Lokalne taverne u Pargi i Sivoti</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
