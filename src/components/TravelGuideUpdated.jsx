@@ -342,7 +342,7 @@ const App = () => {
                                 <span className="font-bold mr-2">Arilas:</span>
                                 <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
                                     <OptimizedImage
-                                        src="https://www.greeka.com/photos/ionian/corfu/beaches/arilas/hero/arilas-beach-1280.jpg"
+                                        src="https://www.visit-thesprotia.gr/wp-content/uploads/2014/07/arilla-aerial2.jpg"
                                         alt="Arilas plaža"
                                         className="w-full h-full object-cover"
                                         caption="Prelepa Arilas plaža u Perdiki"
