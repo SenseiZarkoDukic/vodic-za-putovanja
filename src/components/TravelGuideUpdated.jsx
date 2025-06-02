@@ -150,7 +150,7 @@ const App = () => {
                 <div className="container mx-auto">
                     <div className="flex flex-col md:flex-row items-center justify-between">
                         <div className="text-xl font-bold text-blue-800 mb-4 md:mb-0">
-                            Balkanska Odiseja
+                            Balkanska i jonska Odiseja
                         </div>
                         <div className="flex flex-wrap justify-center gap-2 md:gap-4">
                             { sections.map( ( section ) => (
