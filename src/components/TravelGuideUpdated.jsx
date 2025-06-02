@@ -557,7 +557,7 @@ const App = () => {
                                 <h5 className="text-lg font-semibold text-blue-700 mb-2">Nontas Fish Restaurant</h5>
                                 <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
                                     <OptimizedImage
-                                        src="https://media-cdn.tripadvisor.com/media/photo-s/1a/2c/9c/6c/nontas-fish-restaurant.jpg"
+                                        src="https://nontasfishrestaurant.gr/wp-content/uploads/2022/01/drz-antzi-studios_Q1A8346-Copy.jpg"
                                         alt="Nontas Fish Restaurant"
                                         className="w-full h-full object-cover"
                                         caption="Nontas Fish Restaurant"
