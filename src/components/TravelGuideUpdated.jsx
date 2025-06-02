@@ -572,7 +572,7 @@ const App = () => {
                                 <h5 className="text-lg font-semibold text-blue-700 mb-2">The Crabs Tavern</h5>
                                 <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
                                     <OptimizedImage
-                                        src="https://media-cdn.tripadvisor.com/media/photo-s/1a/2c/9c/6d/the-crabs-tavern.jpg"
+                                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/15/65/18/the-crabs.jpg?w=800&h=400&s=1"
                                         alt="The Crabs Tavern"
                                         className="w-full h-full object-cover"
                                         caption="The Crabs Tavern"
