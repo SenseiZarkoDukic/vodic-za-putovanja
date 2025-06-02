@@ -555,7 +555,7 @@ const App = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="bg-white p-6 rounded-xl shadow-md">
                                 <h5 className="text-lg font-semibold text-blue-700 mb-2">Nontas Fish Restaurant</h5>
-                                <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                                <div className="relative w-full h-80 mb-4 rounded-lg overflow-hidden">
                                     <OptimizedImage
                                         src="https://nontasfishrestaurant.gr/wp-content/uploads/2022/01/drz-antzi-studios_Q1A8346-Copy.jpg"
                                         alt="Nontas Fish Restaurant"
@@ -570,7 +570,7 @@ const App = () => {
                             </div>
                             <div className="bg-white p-6 rounded-xl shadow-md">
                                 <h5 className="text-lg font-semibold text-blue-700 mb-2">The Crabs Tavern</h5>
-                                <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                                <div className="relative w-full h-80 mb-4 rounded-lg overflow-hidden">
                                     <OptimizedImage
                                         src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/15/65/18/the-crabs.jpg?w=800&h=400&s=1"
                                         alt="The Crabs Tavern"
