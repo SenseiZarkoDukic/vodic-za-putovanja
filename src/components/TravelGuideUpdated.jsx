@@ -139,7 +139,15 @@ const App = () => {
     const scrollToSection = ( id ) => {
         const element = sectionRefs.current[ id ];
         if ( element ) {
-            element.scrollIntoView( { behavior: 'smooth' } );
+            // Add offset for the fixed navigation bar (adjust the value based on your nav height)
+            const offset = 100; // This accounts for the nav height plus some padding
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+            window.scrollTo( {
+                top: offsetPosition,
+                behavior: 'smooth'
+            } );
             setActiveSection( id );
         }
     };
@@ -181,7 +189,7 @@ const App = () => {
 
             <div className="container mx-auto px-4 pt-32 pb-16">
                 {/* Hero Section */ }
-                <header id="intro" className="text-center mb-16 p-8 bg-white rounded-3xl shadow-xl">
+                <header id="intro" className="text-center mb-16 p-8 bg-white rounded-3xl shadow-xl pt-24">
                     <h1 className="text-5xl font-extrabold text-blue-800 mb-4 leading-tight">
                         Vaša Idealna Balkanska i Jonska Odiseja
                     </h1>
@@ -203,7 +211,7 @@ const App = () => {
                 </header>
 
                 {/* Day 1 Section */ }
-                <section id="day1" className="mb-16 p-8 bg-white rounded-3xl shadow-xl">
+                <section id="day1" className="mb-16 p-8 bg-white rounded-3xl shadow-xl pt-24">
                     <h2 className="text-4xl font-bold text-blue-700 mb-6">Dan 1: Beograd (Srbija) do Bitolja (Severna Makedonija)</h2>
                     <h3 className="text-2xl font-semibold text-blue-600 mb-4">Istorijsko srce Severne Makedonije (1 noćenje)</h3>
 
@@ -410,7 +418,7 @@ const App = () => {
                 </section>
 
                 {/* Day 2 Section */ }
-                <section id="day2" className="mb-16 p-8 bg-white rounded-3xl shadow-xl">
+                <section id="day2" className="mb-16 p-8 bg-white rounded-3xl shadow-xl pt-24">
                     <h2 className="text-4xl font-bold text-blue-700 mb-6">Dan 2: Bitolj (Severna Makedonija) do Perdike (Grčka)</h2>
                     <h3 className="text-2xl font-semibold text-blue-600 mb-4">Putovanje do Jonskog mora (1 noćenje)</h3>
 
@@ -509,7 +517,7 @@ const App = () => {
                 </section>
 
                 {/* Days 3-15 Section */ }
-                <section id="days3-15" className="mb-16 p-8 bg-white rounded-3xl shadow-xl">
+                <section id="days3-15" className="mb-16 p-8 bg-white rounded-3xl shadow-xl pt-24">
                     <h2 className="text-4xl font-bold text-blue-700 mb-6">Dani 3-15: Jonski dragulji</h2>
                     <h3 className="text-2xl font-semibold text-blue-600 mb-4">Istraživanje Jonskog mora (15 noćenja)</h3>
 
@@ -832,7 +840,7 @@ const App = () => {
                 </section>
 
                 {/* Day 16 Section */ }
-                <section id="day16" className="mb-16 p-8 bg-white rounded-3xl shadow-xl">
+                <section id="day16" className="mb-16 p-8 bg-white rounded-3xl shadow-xl pt-24">
                     <h2 className="text-4xl font-bold text-blue-700 mb-6">Dan 16: E75 povratak kući</h2>
                     <h3 className="text-2xl font-semibold text-blue-600 mb-4">Povratak u Beograd</h3>
 
@@ -860,7 +868,7 @@ const App = () => {
                 </section>
 
                 {/* Practical Considerations Section */ }
-                <section id="practical" className="mb-16 p-8 bg-white rounded-3xl shadow-xl">
+                <section id="practical" className="mb-16 p-8 bg-white rounded-3xl shadow-xl pt-24">
                     <h2 className="text-4xl font-bold text-blue-700 mb-6">Praktična razmatranja</h2>
                     <h3 className="text-2xl font-semibold text-blue-600 mb-4">Saveti za putovanje</h3>
 
@@ -923,7 +931,7 @@ const App = () => {
                 </section>
 
                 {/* Conclusion Section */ }
-                <section id="conclusion" className="mb-16 p-8 bg-white rounded-3xl shadow-xl">
+                <section id="conclusion" className="mb-16 p-8 bg-white rounded-3xl shadow-xl pt-24">
                     <h2 className="text-4xl font-bold text-blue-700 mb-6">Zaključak</h2>
                     <h3 className="text-2xl font-semibold text-blue-600 mb-4">Nezaboravno putovanje</h3>
 
