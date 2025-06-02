@@ -90,6 +90,7 @@ const OptimizedImage = ( { src, alt, className, caption } ) => {
 const App = () => {
     const [ activeSection, setActiveSection ] = useState( 'intro' );
     const sectionRefs = useRef( {} );
+    const [ expandedLandmarks, setExpandedLandmarks ] = useState( {} );
 
     const sections = [
         { id: 'intro', title: 'Uvod: Vaša idealna balkanska i jonska odiseja' },
@@ -141,6 +142,13 @@ const App = () => {
             element.scrollIntoView( { behavior: 'smooth' } );
             setActiveSection( id );
         }
+    };
+
+    const toggleLandmark = ( landmarkId ) => {
+        setExpandedLandmarks( prev => ( {
+            ...prev,
+            [ landmarkId ]: !prev[ landmarkId ]
+        } ) );
     };
 
     return (
@@ -234,63 +242,170 @@ const App = () => {
                             Grad je igrao značajnu ulogu u raznim carstvima, uključujući period pod srpskom vlašću u 14. veku tokom pohoda kralja Stefana Dušana, a kasnije je postao deo Kraljevine Srba, Hrvata i Slovenaca nakon Prvog svetskog rata. Bitolj je bogat kulturnim spomenicima i istorijskom baštinom.
                         </p>
                         <h5 className="text-lg font-semibold text-gray-700 mb-2">Obavezno posetiti znamenitosti:</h5>
-                        <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li className="flex items-center">
-                                <span className="font-bold mr-2">Herakleja Linkestidska:</span>
-                                <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
-                                    <OptimizedImage
-                                        src="https://yusundials.com/wp-content/uploads/2015/07/10-Herakleja-Linkestidska-3.jpg"
-                                        alt="Mozaici u Herakleji Linkestidskoj"
-                                        className="w-full h-full object-cover"
-                                    />
+                        <ul className="list-disc list-inside space-y-4 text-gray-700">
+                            <li className="flex flex-col">
+                                <div className="flex items-center">
+                                    <span className="font-bold mr-2">Herakleja Linkestidska:</span>
+                                    <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
+                                        <OptimizedImage
+                                            src="https://yusundials.com/wp-content/uploads/2015/07/10-Herakleja-Linkestidska-3.jpg"
+                                            alt="Mozaici u Herakleji Linkestidskoj"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
                                 </div>
-                                Drevno arheološko nalazište sa rimskim i vizantijskim ostacima.
+                                <div className="ml-10">
+                                    <p className="text-gray-700">
+                                        { expandedLandmarks.heraklija ? (
+                                            "Samo nekoliko kilometara od centra Bitolja, ovo drevno arheološko nalazište je riznica rimske i vizantijske istorije. Posetioci mogu istražiti dobro očuvane ruševine, uključujući amfiteatar, rimske terme i bazilike ukrašene složeno očuvanim mozaicima koji prikazuju živopisne scene flore i faune. Nalazište je otvoreno od 9 do 18 sati od aprila do oktobra, te od 9 do 16 sati od oktobra do marta."
+                                        ) : (
+                                            "Samo nekoliko kilometara od centra Bitolja, ovo drevno arheološko nalazište je riznica rimske i vizantijske istorije. Posetioci mogu istražiti dobro očuvane ruševine, uključujući amfiteatar, rimske terme i bazilike..."
+                                        ) }
+                                    </p>
+                                    <button
+                                        onClick={ () => toggleLandmark( 'heraklija' ) }
+                                        className="text-blue-600 hover:text-blue-800 text-sm font-medium mt-1"
+                                    >
+                                        { expandedLandmarks.heraklija ? 'Prikaži manje' : 'Više' }
+                                    </button>
+                                </div>
                             </li>
-                            <li className="flex items-center">
-                                <span className="font-bold mr-2">Širok Sokak:</span>
-                                <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
-                                    <OptimizedImage
-                                        src="https://bitola.info/wp-content/uploads/2017/02/Shirok_sokak_Bitola.jpg"
-                                        alt="Širok Sokak noću"
-                                        className="w-full h-full object-cover"
-                                    />
+
+                            <li className="flex flex-col">
+                                <div className="flex items-center">
+                                    <span className="font-bold mr-2">Širok Sokak:</span>
+                                    <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
+                                        <OptimizedImage
+                                            src="https://bitola.info/wp-content/uploads/2017/02/Shirok_sokak_Bitola.jpg"
+                                            alt="Širok Sokak noću"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
                                 </div>
-                                Živahna pešačka ulica, srce modernog Bitolja.
+                                <div className="ml-10">
+                                    <p className="text-gray-700">
+                                        { expandedLandmarks.sirokSokak ? (
+                                            "Ova užurbana pešačka ulica smatra se 'kucajućim srcem modernog Bitolja'. Obložena kafićima, buticima i istorijskim zgradama koje odražavaju osmanske i austrougarske uticaje, nudi živahnu društvenu scenu savršenu za posmatranje ljudi i upijanje dinamične energije grada."
+                                        ) : (
+                                            "Ova užurbana pešačka ulica smatra se 'kucajućim srcem modernog Bitolja'. Obložena kafićima, buticima i istorijskim zgradama..."
+                                        ) }
+                                    </p>
+                                    <button
+                                        onClick={ () => toggleLandmark( 'sirokSokak' ) }
+                                        className="text-blue-600 hover:text-blue-800 text-sm font-medium mt-1"
+                                    >
+                                        { expandedLandmarks.sirokSokak ? 'Prikaži manje' : 'Više' }
+                                    </button>
+                                </div>
                             </li>
-                            <li className="flex items-center">
-                                <span className="font-bold mr-2">Sahat-kula (Saat Kula):</span>
-                                <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
-                                    <OptimizedImage
-                                        src="https://media-cdn.tripadvisor.com/media/photo-s/02/2c/79/7d/bitola.jpg"
-                                        alt="Sahat-kula, Bitolj"
-                                        className="w-full h-full object-cover"
-                                    />
+
+                            <li className="flex flex-col">
+                                <div className="flex items-center">
+                                    <span className="font-bold mr-2">Sahat-kula (Saat Kula):</span>
+                                    <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
+                                        <OptimizedImage
+                                            src="https://media-cdn.tripadvisor.com/media/photo-s/02/2c/79/7d/bitola.jpg"
+                                            alt="Sahat-kula, Bitolj"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
                                 </div>
-                                Istaknuti simbol Bitolja iz 16. veka.
+                                <div className="ml-10">
+                                    <p className="text-gray-700">
+                                        { expandedLandmarks.sahatKula ? (
+                                            "Istaknuti simbol Bitolja iz 16. veka, izvorno osmatračnica, a kasnije pretvorena u gradski sat. Nudi panoramski pogled na grad."
+                                        ) : (
+                                            "Istaknuti simbol Bitolja iz 16. veka, izvorno osmatračnica, a kasnije pretvorena u gradski sat..."
+                                        ) }
+                                    </p>
+                                    <button
+                                        onClick={ () => toggleLandmark( 'sahatKula' ) }
+                                        className="text-blue-600 hover:text-blue-800 text-sm font-medium mt-1"
+                                    >
+                                        { expandedLandmarks.sahatKula ? 'Prikaži manje' : 'Više' }
+                                    </button>
+                                </div>
                             </li>
-                            <li className="flex items-center">
-                                <span className="font-bold mr-2">Crkva sv. Dimitrija:</span>
-                                <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
-                                    <OptimizedImage
-                                        src="https://bitola.info/wp-content/uploads/2018/02/sv-dimitrij-bitola.jpg"
-                                        alt="Crkva sv. Dimitrija, Bitolj"
-                                        className="w-full h-full object-cover"
-                                    />
+
+                            <li className="flex flex-col">
+                                <div className="flex items-center">
+                                    <span className="font-bold mr-2">Crkva sv. Dimitrija:</span>
+                                    <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
+                                        <OptimizedImage
+                                            src="https://bitola.info/wp-content/uploads/2018/02/sv-dimitrij-bitola.jpg"
+                                            alt="Crkva sv. Dimitrija, Bitolj"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
                                 </div>
-                                Značajno versko nasleđe, poznata po freskama.
+                                <div className="ml-10">
+                                    <p className="text-gray-700">
+                                        { expandedLandmarks.crkva ? (
+                                            "Izgrađena 1830. godine, ova pravoslavna crkva je značajno versko nasleđe, poznata po svojim zapanjujućim freskama i arhitektonskoj lepoti."
+                                        ) : (
+                                            "Izgrađena 1830. godine, ova pravoslavna crkva je značajno versko nasleđe, poznata po svojim zapanjujućim freskama..."
+                                        ) }
+                                    </p>
+                                    <button
+                                        onClick={ () => toggleLandmark( 'crkva' ) }
+                                        className="text-blue-600 hover:text-blue-800 text-sm font-medium mt-1"
+                                    >
+                                        { expandedLandmarks.crkva ? 'Prikaži manje' : 'Više' }
+                                    </button>
+                                </div>
                             </li>
-                            <li className="flex items-center">
-                                <span className="font-bold mr-2">Stari bazar (Stara Čaršija):</span>
-                                <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
-                                    <OptimizedImage
-                                        src="https://i0.wp.com/cineculture.gaussinstitute.org/wp-content/uploads/2020/10/stara-carsija-618.jpg?fit=900%2C572&ssl=1"
-                                        alt="Stari bazar, Bitolj"
-                                        className="w-full h-full object-cover"
-                                    />
+
+                            <li className="flex flex-col">
+                                <div className="flex items-center">
+                                    <span className="font-bold mr-2">Stari bazar (Stara Čaršija):</span>
+                                    <div className="relative w-32 h-24 mr-2 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
+                                        <OptimizedImage
+                                            src="https://i0.wp.com/cineculture.gaussinstitute.org/wp-content/uploads/2020/10/stara-carsija-618.jpg?fit=900%2C572&ssl=1"
+                                            alt="Stari bazar, Bitolj"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
                                 </div>
-                                Istorijska tržnica sa lokalnim rukotvorinama i proizvodima.
+                                <div className="ml-10">
+                                    <p className="text-gray-700">
+                                        { expandedLandmarks.bazar ? (
+                                            "Istorijska i očaravajuća tržnica koja datira barem iz 12. veka, sa više od trideset džamija, karavan-saraja i ostacima vizantijske i moderne arhitekture. To je izvrsno mesto za pronalaženje lokalnih rukotvorina, tradicionalne odeće, nakita, svežih proizvoda i začina, nudeći autentičan uvid u lokalni život i kulinarske prakse."
+                                        ) : (
+                                            "Istorijska i očaravajuća tržnica koja datira barem iz 12. veka, sa više od trideset džamija, karavan-saraja i ostacima vizantijske i moderne arhitekture..."
+                                        ) }
+                                    </p>
+                                    <button
+                                        onClick={ () => toggleLandmark( 'bazar' ) }
+                                        className="text-blue-600 hover:text-blue-800 text-sm font-medium mt-1"
+                                    >
+                                        { expandedLandmarks.bazar ? 'Prikaži manje' : 'Više' }
+                                    </button>
+                                </div>
                             </li>
                         </ul>
+                    </div>
+
+                    <div className="mt-8">
+                        <h4 className="text-xl font-medium text-gray-700 mb-2">Kulturno uranjanje</h4>
+                        <p className="text-gray-700 mb-4">
+                            Bitolj je grad koji tokom cele godine slavi razne kulturne i umetničke događaje. Značajni festivali uključuju renomirani Međunarodni festival filmske kamere "Braća Manaki" (slavi kinematografiju), Bitoljski Shakespeare Festival i Bitola Babam Bitola Festival, koji uključuje tradicionalnu muziku i kulinarske delicije. Ovi događaji pružaju duboke veze sa lokalnim tradicijama i živahnom atmosferom.
+                        </p>
+                        <p className="text-gray-700 mb-4">
+                            Iako specifična mesta za redovnu tradicionalnu narodnu muziku nisu opsežno detaljno opisana, Serenada na Širokom sokaku je popularan festival narodne muzike koji se održava u Bitolju. Neki smeštaji, poput Guest House Via, nude "sesije tradicionalne muzike" za svoje goste, stvarajući autentičnu kulturnu atmosferu.
+                        </p>
+                    </div>
+
+                    <div className="mt-8">
+                        <h4 className="text-xl font-medium text-gray-700 mb-2">Blagovanje i noćenje: Autentični makedonski ukusi</h4>
+                        <p className="text-gray-700 mb-4">
+                            Za ukus tradicionalne makedonske kuhinje, razmotrite Restoran Oscar, smešten na putu za Nižepole blizu Pelistera, visoko preporučen od strane lokalne zajednice zbog svojih mesnih, vegetarijanskih i veganskih specijaliteta, kao i kvalitetnih makedonskih vina. Etno restoran Brioni u Čalgiškoj ulici takođe nudi tradicionalnu makedonsku hranu i mesne specijalitete.
+                        </p>
+                        <p className="text-gray-700 mb-4">
+                            Na Širokom sokaku, Ravenna je idealno mesto za isprobavanje tradicionalnih balkanskih jela, uključujući ćevape i jela od svinjetine. Ne propustite lokalne specijalitete poput tavče gravče i Bitolsko brašno.
+                        </p>
+                        <p className="text-gray-700 mb-4">
+                            Za putnike koji traže dublje kulturno iskustvo tokom kratkog boravka, odabir smeštaja može značajno obogatiti putovanje. Guest House Via izričito nudi "sesije tradicionalne muzike", "radionice narodnog plesa" i "mogućnosti kulturne razmene" gde gosti mogu komunicirati sa lokalnim umetnicima i muzičarima. To znači da se jednostavan noćni boravak može pretvoriti u autentično kulturno iskustvo, omogućavajući putnicima da se dublje povežu sa makedonskom tradicijom i maksimiziraju svaki trenutak svog boravka.
+                        </p>
                     </div>
                 </section>
 
