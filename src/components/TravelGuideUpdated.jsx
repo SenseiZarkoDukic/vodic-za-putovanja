@@ -209,11 +209,11 @@ const App = () => {
                                 caption="Vožnja od Beograda do Bitolja (oko 567 km, ~5h 51min)."
                             />
                         </div>
-                        <p className="text-gray-700">
-                            Ova ruta nudi brz i slikovit prelaz iz srpskih ravnica u planinske krajolike Severne Makedonije. Za putnike koji žele maksimalno iskoristiti ograničeno vreme u Bitolju, efikasnost na granici je ključna.
+                        <p className="text-gray-700 mb-4">
+                            Vožnja od Beograda do Bitolja iznosi otprilike 567,3 km i traje oko 5 sati i 51 minutu automobilom. Ova ruta nudi brz i slikovit prelaz iz srpskih ravnica u planinske krajolike Severne Makedonije. Za putnike koji žele maksimalno iskoristiti ograničeno vreme u Bitolju, efikasnost na granici je ključna.
                         </p>
-                        <p className="font-bold text-blue-600 mt-2">
-                            Savet za prelazak granice: Koristite granični prelaz Medžitlija-Niki za brži i lakši prelazak.
+                        <p className="text-gray-700 mb-4">
+                            Istraživanje pokazuje da granični prelaz Medžitlija-Niki, koji je direktna ruta između Bitolja i Florine (Grčka), karakteriše "mali saobraćaj" i "gotovo nikakav saobraćaj" tokom sati van špice, poput ručka i sieste. To ukazuje na znatno glatkiji i brži prelaz u poređenju sa potencijalno prometnijim glavnim rutama. Stoga je preporučljivo planirati korišćenje ovog prelaza kako bi se minimizirala kašnjenja i sačuvalo dragoceno vreme za istraživanje Bitolja.
                         </p>
                     </div>
 
@@ -228,7 +228,10 @@ const App = () => {
                             />
                         </div>
                         <p className="text-gray-700 mb-4">
-                            Bitolj, drugi po veličini grad u Severnoj Makedoniji, nosi počasnu titulu "Grada konzula", što svedoči o njegovoj istorijskoj važnosti kao diplomatskog i trgovačkog centra tokom osmanskog perioda.
+                            Bitolj, drugi po veličini grad u Severnoj Makedoniji, nosi počasnu titulu "Grada konzula", što svedoči o njegovoj istorijskoj važnosti kao diplomatskog i trgovačkog centra tokom osmanskog perioda. Njegova istorija seže u 4. vek pre Hrista, obeležena osnivanjem Herakleje Linkestidske od strane Filipa II. Makedonskog.
+                        </p>
+                        <p className="text-gray-700 mb-4">
+                            Grad je igrao značajnu ulogu u raznim carstvima, uključujući period pod srpskom vlašću u 14. veku tokom pohoda kralja Stefana Dušana, a kasnije je postao deo Kraljevine Srba, Hrvata i Slovenaca nakon Prvog svetskog rata. Bitolj je bogat kulturnim spomenicima i istorijskom baštinom.
                         </p>
                         <h5 className="text-lg font-semibold text-gray-700 mb-2">Obavezno posetiti znamenitosti:</h5>
                         <ul className="list-disc list-inside space-y-2 text-gray-700">
