@@ -1,5 +1,5 @@
 import React from 'react';
-import TravelGuideUpdated from './components/TravelGuideUpdated';
+import TravelGuideUpdated from './components/TravelGuideUpdated.jsx';
 
 const App = () => {
   return (
